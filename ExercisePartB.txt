@@ -1,0 +1,65 @@
+public class Company {
+    public String[1] name;
+    public Address[1] headquarters;
+}
+
+public interface IRentable{
+    public void rent();
+}
+
+class Vehicle implements Interface{
+
+}
+
+class Truck extends Vehicle{
+    public UnlimitedNatural[1] weight;
+    public UnlimitedNatural[1] power;
+    public String[1] manufacturer;
+    public String[1] regNo;
+} 
+class Car extends Vehicle{
+    public carKind[1] kind;
+    public UnlimitedNatural[1] noSeats;
+    public UnlimitedNatural[1] power;
+    public String[1] manufacturer;
+    public String[1] regNo;
+}
+class Motorbike extends Vehicle{
+    public MbKind[1] kind;
+    public UnlimitedNatural[1] cylinderCap;
+    public UnlimitedNatural[1] power;
+    public String[1] manufacturer;
+    public String[1] regNo;
+}
+
+public class Person{
+    public String[1] name;
+    public String email;
+
+    Employee[] employees;
+    Customer[] customers;
+    Subcontractor[] subcontractors;
+}
+
+abstract class Service {
+    public Customer[1] customer;
+}
+
+class VehiclerRntalService extends Service{
+    public void Vehicle[1] vehicle;
+    public void offerCar();
+    public void offerMotorbike();
+    public void offTruck();
+}
+
+public class Address {
+    public String[1] street;
+    public String[1] postalCode;
+    public String[1] city;
+}
+
+public class BankAccount{
+    public UnlimitedNatural[1] number;
+    public String[1] depositor;
+    public String[1] bank;
+}
